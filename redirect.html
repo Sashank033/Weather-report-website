@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather report</title>
+    <link rel="stylesheet" href="redirect.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.23/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.23/"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script> -->
+    <!-- <script src="path/to/chartjs/dist/chart.js"></script> -->
+   
+
+</head>
+<body>
+<button class="tablink" onclick="openPage('today', this, 'grey')" id="defaultOpen">TODAY</button>
+<button class="tablink" onclick="openPage('hourly', this, 'grey')" >HOURLY</button>
+<button class="tablink" onclick="openPage('daily', this, 'grey')">DAILY</button>
+<button class="tablink" onclick="openPage('minutely', this, 'grey')">MINUTELY</button>
+
+<div id="today" class="tabcontent">
+<div class="news">
+
+  <h4 id="today_heading">CURRENT WEATHER</h4>
+  <h3 id="current_time_value"></h3></div>
+  <img id="today_img" src="sunny.jpg" alt="sunny">
+  
+
+  <p id="today_temp"><b>➼ Temperature</b></p> <p id="today_temp_value"><b>-</b></p>
+  <hr id="temp_line">
+  <p id="today_pressure"><b>➼ Pressure</b></p> <p id="today_pressure_value">-</p>
+  <hr id="pressure_line">
+  <p id="today_uv"><b>➼ Maximum UV Index</b></p><p id="today_uv_value">-</p>
+  <hr id="uv_line">
+  <p id="today_dew"><b>➼ Dew Point</b></p><p id="today_dew_value">-</p>
+  <div id="viewDiv"></div>
+  <button id="moreinfo"><b>More Details</b></button>
+  <br><br>
+  <div class="more_info" >
+    <p id="country_code"><b>➼ COUNTRY CODE :</b></p><p id="country_code_value"></p>
+    <!-- <p id="city_name"><b>➼ CITY NAME :</b></p><p id="city_name_value"></p> -->
+    <p id="rh"><b>➼ RELATIVE HUMIDITY :</b></p><p id="rh_value"></p>
+    <p id="aq"><b>➼ AIR QUALITY :</b></p><p id="aq_value"></p>
+    <p id="tz"><b>➼ TIME-ZONE :</b></p><p id="tz_value"></p>
+  </div>
+  <div id="indicators" ></div>
+  <h2>INDICATORS :</h2>
+  <p style="color: red;"><b> RED </b> ➼ High Risk</p>
+  <p style="color: orange;"><b>ORANGE </b> ➼ Above Moderate Risk</p>
+  <p style="color: #e8f005;"><b>YELLOW</b> ➼ Moderate Risk</p>
+  <p style="color: green;"><b>GREEN</b> ➼ Normal</p>
+</div>
+
+
+
+<!-- </div> -->
+
+</div>
+
+<div id="hourly" class="tabcontent">
+ <a href="https://www.weather.gov/pqr/wind"><button id="hourly_wind_range">Tap to know wind speed colour descriptions</button></a>
+ image.png
+  <!-- <div>
+<button type="button" class="collapsible">12 AM</button>
+<div class="content">
+  <p>TEMPERATURE : 
+  </p>
+  <p>PRESSURE : </p>
+  <p> UV : </p>
+  <p>MAX. DEW POINT: </p>
+</div>
+<button type="button" class="collapsible">1 AM</button>
+<div class="content">
+  <p>TEMPERATURE : 
+  </p>
+  <p>PRESSURE : </p>
+  <p> UV : </p>
+  <p>MAX. DEW POINT: </p>
+</div>
+<button type="button" class="collapsible">2 AM</button>
+<div class="content">
+  <p>PRESSURE : </p>
+  <p> UV : </p>
+  <p>MAX. DEW POINT: </p>
+</div>
+  </div> -->
+  <div id="wrapper">     
+    <div id="scroller">
+      <div data-role="content">
+       <div class="content-left">
+      
+       
+         <div id="blog" ></div> <!-- this is the JSON load in -->
+       </div>
+      </div>
+    </div>
+   </div>
+</div>
+
+<div id="daily" class="tabcontent">
+  <div id="wrapper">
+    <div id="scroller">
+      <div data-role="content">
+       <div class="content-left">
+       
+         <div id="daily_data" ></div> <!-- this is the JSON load in -->
+       </div>
+      </div>
+    </div>
+   </div>
+</div>
+
+<div id="minutely" class="tabcontent">
+  <div id="wrapper">
+    <div id="scroller">
+      <div data-role="content">
+       <div class="content-left">
+       
+         <div id="minute_data" ></div> <!-- this is the JSON load in -->
+       </div>
+      </div>
+    </div>
+   </div>
+  </div>
+<script src="redirect.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-color:whitesmoke !important;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+
+  
+}
+#monthly_img{
+  margin-top: 10px;
+}
+
+.news{
+  
+  height:400px;
+  width: 600px;
+  background-color: white !important;
+  padding: 10px;
+
+  /* border: solid 2px black; */
+}
+#today_temp{
+      margin-left: 280px;
+    margin-top: -311px;
+
+}
+#today_pressure{
+  margin-left: 284px;
+  margin-bottom: -112px
+
+}
+#today_uv{
+  margin-left: 284px;
+  margin-top: 16px;
+}
+#today_dew{
+  margin-left: 287px;
+  margin-top: 16px;
+}
+#today_img{
+  margin-top: -288px;
+  margin-left: 12px;
+}
+#temp_line{
+  width: 293px;
+  margin-left: 272px;
+  margin-top: 32px;
+
+}
+#pressure_line{
+  margin-left: 272px;
+    margin-top: 40px;
+    width: 292px;
+}
+#uv_line{
+  width: 292px;
+  margin-left: 272px;
+  margin-top: 36px;
+}
+/* value */
+#today_temp_value{
+  margin-left: 525px;
+    margin-top: -32px;
+}
+#today_pressure_value{
+  margin-left: 525px;
+  margin-top: 91px;
+
+}
+#today_dew_value{
+  margin-left: 525px;
+  margin-top: -32px;
+
+}
+#today_uv_value{
+  margin-left: 525px;
+  margin-top: -32px;
+}
+#current_time_value{
+   margin-top: 10px;
+   color: #555;
+   font-size: 15px;
+}
+#hour_time_value{
+  color: #555;
+   font-size: 15px;
+
+}
+img{
+  height: 130px;
+  margin-left: 291px;
+  margin-top: -89px;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.card{
+  height:300px;
+  width: 800px;
+  background-color: white !important;
+  padding: 10px;
+
+
+}
+.row1_data{
+  margin-left: 10px;
+
+}
+.row3_data{
+  margin-left: 614px;
+  margin-top: -108px;
+
+}
+.row2_data{
+  margin-left: 270px;
+  margin-top: -103px;
+
+}
+#viewDiv {
+  padding: 0;
+  margin-left: 45%;
+  height: 60%;
+  width: 50%;
+  position: absolute;
+  top:100px;
+  
+}
+.more_info{
+  /* margin-left: 10px; */
+  height:400px;
+  width: 600px;
+  background-color: white !important;
+  padding: 10px;
+  /* margin-left: 22px; */
+  display: none;
+  margin-top: 10px;
+}
+#moreinfo{
+  margin-left: 10px;
+ 
+}
+#hourly_wind_range{
+  margin-left: 960px;
+
+}

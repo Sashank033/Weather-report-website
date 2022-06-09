@@ -1,0 +1,7 @@
+https://rapidapi.com/weatherbit/api/weather/
+RapidAPIRapidAPI
+Weather API Documentation (weatherbit) | RapidAPI
+Current weather data API, and Weather forecast API - Basic access to the Weatherbit.io Weather API.
+
+API used to get weather data ....whenever u use and when the limit reaches for api calls then login to other account and subscribe for 0 $ 
+now copy the api key and paste it in redirect.js for every key .

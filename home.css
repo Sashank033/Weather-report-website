@@ -1,0 +1,21 @@
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+}
+
+button{
+    font-size: 20px;
+    width: 60px;
+    height: 30px;
+    margin-left:1px;
+    background-color:white;
+    border: none;
+}
+.location_class{
+    display: inline-flex;
+    
+}
+body{
+    background-image: url("weather.jpg");
+    background-size:cover;
+}
